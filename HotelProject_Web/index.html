@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery | Home</title>
+
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+
+        <nav class="navbar">
+            <a href="index.html" id="home">Home</a>
+            <a href="index.html" id="about">About</a>
+            <a href="index.html" id="menu">Menu</a>
+            <a href="review.html" id="review">Reviews</a>
+            <a href="#" id="login">Login</a>
+            <a href="#" id="invoice">Invoice</a>
+            <a href="#" id="logout">Logout</a>
+        </nav>
+    </header>
+
+    <!-- Search Form -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search here.." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="swiper mySwiper home-slider">
+            <div class="swiper-wrapper wraper">
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Spicy Noodles</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum ea temporibus!
+                        </p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Fried Chicken</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum ea temporibus!
+                        </p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Sizzling Pizza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolorum ea temporibus!
+                        </p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about">
+        <h3 class="sub-heading">About Us</h3>
+        <h1 class="heading">Why Choose Us?</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Best Food in the Area</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis eius illum, magnam rerum distinctio
+                    architecto unde, incidunt delectus explicabo commodi ratione veritatis dicta voluptas itaque veniam
+                    similique. Voluptatem, molestias minus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis cum atque odit nesciunt facilis
+                    possimus corrupti eveniet soluta consequatur nobis.</p>
+                <div class="icon-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Easy Payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- add menu section -->
+    <section id="menu" class="menu">
+        <h3 class="sub-heading">Menu</h3>
+        <h1 class="heading">All Menu</h1>
+
+        <div class="box-container">
+        </div>
+    </section>
+
+    <!-- review section -->
+    <section class="review" id="review">
+        <h3 class="sub-heading">Customer's Review</h3>
+        <h1 class="heading">what they say</h1>
+
+        <div class="swiper mySwiper review-slider">
+            <div class="swiper-wrapper wrapper cc">
+
+                <!-- <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quis odit, soluta sapiente,
+                        ducimus qui quibusdam quia omnis laboriosam quo totam voluptates esse! Saepe ex, laudantium illo
+                        corrupti eos expedita?</p>
+                </div> -->
+
+                <!-- <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-2.png" alt="">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quis odit, soluta sapiente,
+                        ducimus qui quibusdam quia omnis laboriosam quo totam voluptates esse! Saepe ex, laudantium illo
+                        corrupti eos expedita?</p>
+                </div> -->
+
+                <!-- <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-3.png" alt="">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quis odit, soluta sapiente,
+                        ducimus qui quibusdam quia omnis laboriosam quo totam voluptates esse! Saepe ex, laudantium illo
+                        corrupti eos expedita?</p>
+                </div> -->
+
+                <!-- <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-4.png" alt="">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quis odit, soluta sapiente,
+                        ducimus qui quibusdam quia omnis laboriosam quo totam voluptates esse! Saepe ex, laudantium illo
+                        corrupti eos expedita?</p>
+                </div> -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- JS file -->
+    <script src="style.js"></script>
+</body>
+
+</html>

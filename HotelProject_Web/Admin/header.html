@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Food Ordering|Home</title> -->
+
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+
+        <nav class="navbar">
+            <a href="#" id="menu">Menu</a>
+            <a href="#" id="order">Order</a>
+            <a href="#" id="logout">Logout</a>
+            <a href="#" id="login">Login</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            if (window.localStorage.getItem('AdminID') == null) {
+                $('#menu').hide();
+                $('#order').hide();
+                $('#logout').hide();
+            } else {
+                $('#login').hide();
+            }
+
+            $('#login').click(() => {
+                window.location.href = "login.html";
+            })
+
+            $('#menu').click(() => {
+                window.location.href = "addmenu.html";
+            })
+
+            $('#order').click(() => {
+                window.location.href = "addorder.html";
+            })
+
+            $('#logout').click(() => {
+                window.localStorage.clear();
+                window.location.href = "http://127.0.0.1:5500/Admin/main.html";
+            })
+
+        })
+    </script>
+
+    <!-- JS file -->
+    <script src="style.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering | Add Order</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="addorder.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+        <nav class="navbar">
+            <a href="#" id="menu">Menu</a>
+            <a href="#" id="customer">Customer</a>
+            <a href="#" id="order">Orders</a>
+            <a href="#" id="logout">Logout</a>
+            <a href="#" id="login">Login</a>
+        </nav>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+    </section>
+
+    <!-- add menu section -->
+    <section class="menu" id="menu">
+    
+        <h3 class="sub-heading">Order</h3>
+        <h1 class="heading">All Orders</h1>
+        <table id="customers">
+            <thead>
+                <tr>
+                    <th>Order Id</th>
+                    <th>Date</th>
+                    <th>Customer Id</th>
+                    <th>Item Id</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="pp">
+
+            </tbody>
+        </table>
+        
+    </section>
+
+    <!-- JS file -->
+    <script src="addorder.js"></script>
+</body>
+
+</html>

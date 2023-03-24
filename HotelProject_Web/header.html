@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Food Ordering|Home</title> -->
+
+    <!-- Swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Resto.</a>
+
+        <nav class="navbar">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="about">About</a>
+            <a href="#" id="menu">Menu</a>
+            <a href="#" id="review">Reviews</a>
+            <a href="#" id="login">Login</a>
+            <a href="#" id="invoice">Invoices</a>
+            <a href="#" id="logout">Logout</a>
+        </nav>
+    </header>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        $(document).ready(() => {
+            if (window.localStorage.getItem('AdminID') == null) {
+                $('#invoice').hide();
+                $('#logout').hide();
+            } else {
+                $('#login').hide();
+            }
+
+            $('#login').click(() => {
+                window.location.href = "login.html";
+            })
+
+            $('#invoice').click(() => {
+                window.location.href = "invoice.html";
+            })
+
+            $('#logout').click(() => {
+                window.localStorage.clear();
+                window.location.href = "http://127.0.0.1:5500/index.html";
+            })
+
+        })
+    </script>
+
+    <!-- JS file -->
+    <script src="style.js"></script>
+</body>
+
+</html>
